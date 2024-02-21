@@ -273,9 +273,14 @@ h6 {
   height: 100vh; /* Điều chỉnh chiều cao theo yêu cầu */
 }
 .centered-video {
-  width: 100%; /* Đảm bảo video chiếm toàn bộ chiều rộng */
-  height: auto; /* Để video tự động thay đổi chiều cao theo tỷ lệ */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 }
+
 
 #hero:before {
   content: "";
