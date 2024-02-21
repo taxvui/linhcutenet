@@ -266,7 +266,16 @@ h6 {
   width: 100%;
   height: 100%;
 }
-
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Điều chỉnh chiều cao theo yêu cầu */
+}
+.centered-video {
+  width: 100%; /* Đảm bảo video chiếm toàn bộ chiều rộng */
+  height: auto; /* Để video tự động thay đổi chiều cao theo tỷ lệ */
+}
 
 #hero:before {
   content: "";
