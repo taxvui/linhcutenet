@@ -245,15 +245,23 @@ h6 {
   /*background: url("../img/hero-bg.jpg") top center;*/
   background-size: cover;
 }
-
 #linhcute {
+    position: fixed; /* Để video nằm trên cùng của mọi nội dung */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo video không bị méo khi kéo giãn */
+    z-index: -1; /* Đặt video ở phía sau tất cả các phần tử khác */
+}
+/*#linhcute {
 	position:relative;
 	z-index:-1;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-}
+}*/
 
 #hero:before {
   content: "";
