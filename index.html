@@ -63,11 +63,17 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-		<video autoplay muted loop id="linhcute">
-		<source src="assets/img/linh.mp4" type="video/mp4" />
-		</video>
+		<button onclick="playVideo()">Phát video</button>
+<video id="linhcute" style="display: none;">
+  <source src="assets/img/linh.mp4" type="video/mp4">
+</video>
 
-    </div>
+<script>
+function playVideo() {
+  var video = document.getElementById('linhcute');
+  video.play();
+}
+</script></div>
   </section><!-- End Hero -->
 
   <main id="main">
